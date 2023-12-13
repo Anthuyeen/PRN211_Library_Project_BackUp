@@ -1,4 +1,6 @@
-﻿using System;
+﻿using _06_LibraryManagement_PRN221_Project.Logics;
+using _06_LibraryManagement_PRN221_Project.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,44 @@ namespace _06_LibraryManagement_PRN221_Project
         public MainWindow()
         {
             InitializeComponent();
+            DateTime toDay = DateTime.Now;
+            lbDay.Content = toDay.ToString("dd/MM/yyyy");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string account = tbAccount.Text.Trim();
+            string password = tbPassword.Password.Trim();
+            if (string.IsNullOrEmpty(account) || string.IsNullOrEmpty(password))
+                MessageBox.Show("Please enter both username and password!");
+
+            Account? login = AccountManagement.GetAccount(account, password);
+            if (login != null)
+            {
+                Librarian? librarian = LibrarianManagement.GetLibrarian(login.LibrarianId);
+                if (librarian != null)
+                {
+                    Home home = new(login, librarian);
+                    home.Show();
+                    Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Error in getting librarian info, please check the database!", "Weird Error", MessageBoxButton.OK);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Wrong account or password!", "Login Failed", MessageBoxButton.OK);
+                tbPassword.Password = "";
+                tbAccount.Focus();
+            }
+        }
+
+        private void btn_Exit_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Close?", "Exit", MessageBoxButton.YesNoCancel);
+            if (result == MessageBoxResult.Yes)
+                this.Close();
         }
     }
-}
