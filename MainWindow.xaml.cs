@@ -65,4 +65,18 @@ namespace _06_LibraryManagement_PRN221_Project
             if (result == MessageBoxResult.Yes)
                 this.Close();
         }
+
+        private void Chbx_ShowPwd_Checked(object sender, RoutedEventArgs e)
+        {
+            passwordTxtBox.Text = tbPassword.Password;
+            tbPassword.Visibility = Visibility.Collapsed;
+            passwordTxtBox.Visibility = Visibility.Visible;
+        }
+
+        private void Chbx_ShowPwd_Unchecked(object sender, RoutedEventArgs e)
+        {
+            tbPassword.Password = passwordTxtBox.Text;
+            passwordTxtBox.Visibility = Visibility.Collapsed;
+            tbPassword.Visibility = Visibility.Visible;
+        }
     }
