@@ -2344,24 +2344,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ASUS TUF\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPTU\\ki7\\PRN221_BL5\\06_LibraryManagement_FinalProject\\06_LibraryManagement_PRN221_Project\\06_LibraryManagement_PRN221_Project\\06_LibraryManagement_PRN221_Project.csproj",
+      "projectUniqueName": "E:\\Semester\\Semester7\\PRN221_BL5\\LibraryManagement_PRN221_Project\\06_LibraryManagement_PRN221_Project.csproj",
       "projectName": "06_LibraryManagement_PRN221_Project",
-      "projectPath": "D:\\FPTU\\ki7\\PRN221_BL5\\06_LibraryManagement_FinalProject\\06_LibraryManagement_PRN221_Project\\06_LibraryManagement_PRN221_Project\\06_LibraryManagement_PRN221_Project.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\FPTU\\ki7\\PRN221_BL5\\06_LibraryManagement_FinalProject\\06_LibraryManagement_PRN221_Project\\06_LibraryManagement_PRN221_Project\\obj\\",
+      "projectPath": "E:\\Semester\\Semester7\\PRN221_BL5\\LibraryManagement_PRN221_Project\\06_LibraryManagement_PRN221_Project.csproj",
+      "packagesPath": "C:\\Users\\ASUS TUF\\.nuget\\packages\\",
+      "outputPath": "E:\\Semester\\Semester7\\PRN221_BL5\\LibraryManagement_PRN221_Project\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ASUS TUF\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2369,7 +2364,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2426,7 +2420,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
