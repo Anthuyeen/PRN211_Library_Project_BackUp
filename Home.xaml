@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_06_LibraryManagement_PRN221_Project"
         mc:Ignorable="d"
-       Title="Home management" Height="535" Width="867">
+       Title="Home management" Height="645" Width="1226">
     <Grid>
         <Grid>
-            <StackPanel Margin="0,0,717,0">
-                <Button Content="Manager book" Margin="0 50 0 0" Height="45" Width="130" FontWeight="Bold" x:Name="managerBook"/>
+            <StackPanel Margin="0,0,1078,0">
+                <Button Content="Manager book" Margin="0 50 0 0" Height="45" Width="130" FontWeight="Bold" x:Name="managerBook" Click="managerBook_Click"/>
                 <Button Content="Manager reader" Margin="0 25 0 0" Height="45" Width="130" FontWeight="Bold" x:Name="namagerReader"/>
                 <Button Content="Manager lend book" Margin="0 25 0 0" Height="45" Width="130" FontWeight="Bold" x:Name="managerLendBook"/>
                 <Button Content="Manager return book" Margin="0 25 0 0" Height="45" Width="130" FontWeight="Bold" x:Name="managerReturnBook"/>
@@ -18,7 +18,7 @@
             </StackPanel>
         </Grid>
         <Grid Margin="154,0,0,0">
-            <Frame Margin="10,0,0,0" x:Name="frameHome"></Frame>
+            <Frame Margin="10,0,0,0" x:Name="frameHome" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" NavigationUIVisibility="Hidden" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"></Frame>
         </Grid>
     </Grid>
 </Window>

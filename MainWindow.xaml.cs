@@ -80,3 +80,4 @@ namespace _06_LibraryManagement_PRN221_Project
             tbPassword.Visibility = Visibility.Visible;
         }
     }
+}

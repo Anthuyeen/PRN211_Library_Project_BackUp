@@ -40,5 +40,12 @@ namespace _06_LibraryManagement_PRN221_Project
                 main.Show();
             }
         }
+
+        private void managerBook_Click(object sender, RoutedEventArgs e)
+        {
+
+            BookManager b = new BookManager();
+            frameHome.Content = b;
+        }
     }
 }
