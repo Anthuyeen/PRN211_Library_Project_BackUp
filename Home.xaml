@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_Library_Management_FA23_BL5"
         mc:Ignorable="d"
-        Title="Home management" Height="534" Width="1054">
+        Title="Home management" Height="544" Width="1274">
     <Grid>
         <Grid>
-            <StackPanel Margin="0,0,909,0">
+            <StackPanel Margin="0,0,1115,0">
                 <Button Content="Manager book" Margin="0 50 0 0" Height="45" Width="130" FontWeight="Bold" x:Name="managerBook" Click="managerBook_Click"/>
                 <Button Content="Manager reader" Margin="0 25 0 0" Height="45" Width="130" FontWeight="Bold" x:Name="namagerReader" Click="namagerReader_Click"/>
                 <Button Content="Manager lend book" Margin="0 25 0 0" Height="45" Width="130" FontWeight="Bold" x:Name="managerLendBook" Click="managerLendBook_Click"/>
